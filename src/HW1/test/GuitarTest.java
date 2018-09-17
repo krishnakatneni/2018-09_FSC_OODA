@@ -1,4 +1,4 @@
-package HW1.test;
+package HW1;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -80,4 +80,3 @@ class GuitarTest {
 		String returned = this.testGuitar.getTopWood();
 		assertEquals(expected, returned, String.format("Top wood %s != %s", expected, returned));
 	}
-}
