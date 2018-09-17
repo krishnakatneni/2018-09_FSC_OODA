@@ -1,5 +1,4 @@
-/**
- * Class: Object-Oriented Design and Analysis
+* Class: Object-Oriented Design and Analysis
  * Professor: Orlando Montalvo
  * Assignment: HW 1
  * 
@@ -11,6 +10,9 @@ package HW1;
 /**
  * Guitar contains the information needed to keep track of a type of guitar from
  * Rick's music store
+ * 01392300 Aditya
+ * @01392295 Nikhil
+ * @01390645 Raghunandan
  * 
  * @author HeadFirstOODA
  *
@@ -34,7 +36,7 @@ public class Guitar {
 			String topWood) {
 		this.serialNumber = serialNumber;
 		this.price = price;
-		this.manufacturer = manufacturer;
+		this.manufacturer= manufacturer;
 		this.model = model;
 		this.type = type;
 		this.backWood = backWood;
@@ -136,4 +138,6 @@ public class Guitar {
 	 * Rick's price for the guitar
 	 */
 	private double price;
+
+	
 }
