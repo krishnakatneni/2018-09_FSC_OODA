@@ -1,4 +1,12 @@
 package HW1;
+/*01392300 Aditya
+ * @01392295 Nikhil
+ * @01390645 Raghunandan
+ * 
+ * 
+ * 
+ * 
+ * */
 public class FindGuitarTester {
 
   public static void main(String[] args) {
@@ -8,6 +16,8 @@ public class FindGuitarTester {
 
     Guitar whatErinLikes = new Guitar("", 0, "fender", "Stratocastor", 
                                       "electric", "Alder", "Alder");
+    /*Guitar whatErinLikes1 = new Guitar("", 0, "gibson", "les paul", 
+            "electric", "mahogany","maple");*/
     Guitar guitar = inventory.search(whatErinLikes);
     if (guitar != null) {
       System.out.println("Erin, you might like this " +
