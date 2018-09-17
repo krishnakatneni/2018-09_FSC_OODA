@@ -1,6 +1,8 @@
 
 package HW1;
 
+
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,13 +13,17 @@ import java.util.List;
  * 
  * @author orlando
  * @version 2.0
+ * 01392300 Aditya
+ * @01392295 Nikhil
+ * @01390645 Raghunandan
  */
 public class Inventory {
   private List<Guitar> guitars = new LinkedList<Guitar>();
 
   public void addGuitar(String serialNumber, double price,
                         String builder, String model,
-                        String type, String backWood, String topWood) {
+                        String type, String backWood, String topWood) 
+  {
     Guitar guitar = new Guitar(serialNumber, price, builder,
                                model, type, backWood, topWood);
     guitars.add(guitar);
@@ -38,23 +44,26 @@ public class Inventory {
       // Ignore price since that's unique
       String builder = searchGuitar.getManufacturer();
       if ((builder != null) && (!builder.equals("")) &&
-          (!builder.equals(guitar.getManufacturer())))
+          (!builder.equalsIgnoreCase(guitar.getManufacturer())))//It compares  manufacturer name with no case sensitivity
         continue;
+    
       String model = searchGuitar.getModel();
+      
       if ((model != null) && (!model.equals("")) &&
-          (!model.equals(guitar.getModel())))
+          (!model.equalsIgnoreCase(guitar.getModel())))//It compares model without case sensitivity
         continue;
+      
       String type = searchGuitar.getType();
       if ((type != null) && (!searchGuitar.equals("")) &&
-          (!type.equals(guitar.getType())))
+          (!type.equalsIgnoreCase(guitar.getType())))//It compares the type without the case sensitivity
         continue;
       String backWood = searchGuitar.getBackWood();
       if ((backWood != null) && (!backWood.equals("")) &&
-          (!backWood.equals(guitar.getBackWood())))
+          (!backWood.equalsIgnoreCase(guitar.getBackWood())))//It compares the backwood ignoring  case
         continue;
       String topWood = searchGuitar.getTopWood();
       if ((topWood != null) && (!topWood.equals("")) &&
-          (!topWood.equals(guitar.getTopWood())))
+          (!topWood.equalsIgnoreCase(guitar.getTopWood())))//it compares the the topwood ignoring the case
         continue;
       return guitar;
     }
