@@ -1,12 +1,14 @@
-package HW1;
-/*01392300 Aditya
+package HW1.edu.fitchburgstate.csc7400;
+/**
+ * This class interact with guitar and inventory class and give the result based on coustomer inputs. 
+ * 
+ * @author orlando
+ * @version 2.0
+ * 01392300 Aditya
  * @01392295 Nikhil
  * @01390645 Raghunandan
- * 
- * 
- * 
- * 
- * */
+ */
+/*This method take the input from customer based on user input it searches the inventory and get all the matching records and displays to customer */
 public class FindGuitarTester {
 
   public static void main(String[] args) {
@@ -16,8 +18,7 @@ public class FindGuitarTester {
 
     Guitar whatErinLikes = new Guitar("", 0, "fender", "Stratocastor", 
                                       "electric", "Alder", "Alder");
-    /*Guitar whatErinLikes1 = new Guitar("", 0, "gibson", "les paul", 
-            "electric", "mahogany","maple");*/
+    
     Guitar guitar = inventory.search(whatErinLikes);
     if (guitar != null) {
       System.out.println("Erin, you might like this " +
@@ -30,7 +31,10 @@ public class FindGuitarTester {
       System.out.println("Sorry, Erin, we have nothing for you.");
     }
   }
-
+/*@param inventory object
+ * it intializes all the guitars below.
+ * 
+ * */
   private static void initializeInventory(Inventory inventory) {
     inventory.addGuitar("11277", 3999.95, "Collings", "CJ", "acoustic",
                         "Indian Rosewood", "Sitka");
