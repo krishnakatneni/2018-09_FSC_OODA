@@ -1,26 +1,21 @@
-* Class: Object-Oriented Design and Analysis
- * Professor: Orlando Montalvo
- * Assignment: HW 1
- * 
- * Date: 2018-09-03
- */
-
-package HW1;
-
+package HW1.edu.fitchburgstate.csc7400;
+/* Class: Object-Oriented Design and Analysis
+* Professor: Orlando Montalvo
+* Assignment: HW 1
+* Students: Aditya(@01392300)
+* 			Nikhil(@01392295)
+*			Raghunandan(@01390645 )
+* Date: 2018-09-03
+*/
 /**
- * Guitar contains the information needed to keep track of a type of guitar from
- * Rick's music store
- * 01392300 Aditya
- * @01392295 Nikhil
- * @01390645 Raghunandan
- * 
- * @author HeadFirstOODA
- *
- */
+* Guitar contains the information needed to keep track of a type of guitar from
+* Rick's music store
+
+*/
 public class Guitar {
 
 	/**
-	 * Full constructor
+	 * Full constructor of the guitar when we passed the given value in the guitar constructor we get the guitar object 
 	 * 
 	 * @param serialNumber manufacturer serial number
 	 * @param price store price
