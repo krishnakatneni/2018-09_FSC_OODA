@@ -1,14 +1,16 @@
 
-package HW1;
 
 
 
+
+
+package HW1.edu.fitchburgstate.csc7400;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Inventory keeps a searchable collection of Guitars. It is meant to be use
+ * Inventory  Class keeps a searchable collection of Guitars. It is meant to be use
  * to find matching guitars for customers. 
  * 
  * @author orlando
@@ -19,6 +21,11 @@ import java.util.List;
  */
 public class Inventory {
   private List<Guitar> guitars = new LinkedList<Guitar>();
+  
+  /*Provide serialNumber,price,builder,model,type,backWood and topWood to add a guitar
+  Adds a new guitar by providing serialNumber,price,builder,model,type,backWood and topWood*/
+  
+  			
 
   public void addGuitar(String serialNumber, double price,
                         String builder, String model,
@@ -37,7 +44,13 @@ public class Inventory {
     }
     return null;
   }
-  public Guitar search(Guitar searchGuitar) {
+  /*Search by Guitar using Guitar object with parameter(builder,model,type,backWood and topWood) 
+  * the values must be first passed into guitar class and get the guitar object first
+  * @param searchGuitar
+  * @return Guitar or null */
+  
+  public Guitar search(Guitar searchGuitar) 
+  {
     for (Iterator i = guitars.iterator(); i.hasNext(); ) {
       Guitar guitar = (Guitar)i.next();
       // Ignore serial number since that's unique
