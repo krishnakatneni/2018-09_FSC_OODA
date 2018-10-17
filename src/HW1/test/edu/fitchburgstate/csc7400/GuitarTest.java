@@ -1,13 +1,14 @@
-package HW1.test;
 
+package HW1.test.edu.fitchburgstate.csc7400;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import HW1.Guitar;
 
-class GuitarTest {
+/*test the guitar class by pulling each parameter of the constructor*/
+class GuitarTest
+{
 	
 	Guitar testGuitar;
 
